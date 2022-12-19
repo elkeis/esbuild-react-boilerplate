@@ -1,0 +1,41 @@
+{
+  "name": "esbuild-boilerplate-react",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "inspired by @web/demo-react-tsx",
+  "main": "index.js",
+  "scripts": {
+    "first-run": "npm i && npm run mkcert && npm run start",
+    "start": "web-dev-server --open",
+    "start:watch": "web-dev-server --open --watch",
+    "test": "web-test-runner test/**/*.test.tsx",
+    "build": "node esbuild.mjs",
+    "mkcert": "mkcert-cli -o .cert",
+    "test:watch": "web-test-runner test/**/*.test.tsx --watch"
+  },
+  "dependencies": {
+    "react": "npm:@pika/react@16.13.1",
+    "react-dom": "npm:@pika/react-dom@16.13.1"
+  },
+  "devDependencies": {
+    "@esm-bundle/chai": "4.3.4",
+    "@types/react": "^16.14.34",
+    "@types/react-dom": "^16.9.17",
+    "@web/dev-server": "0.1.35",
+    "@web/dev-server-esbuild": "0.3.3",
+    "@web/dev-server-rollup": "^0.3.19",
+    "@web/test-runner": "0.15.0",
+    "autoprefixer": "^10.4.13",
+    "esbuild": "^0.16.9",
+    "esbuild-plugin-postcss2": "^0.1.2",
+    "mkcert-cli": "^1.4.1",
+    "postcss": "^8.4.20",
+    "postcss-nested": "^6.0.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-sass": "^1.12.17",
+    "rollup-plugin-scss": "^4.0.0"
+  }
+}

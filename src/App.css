@@ -1,0 +1,7 @@
+.App {
+  background-color: peachpuff;
+
+  div:hover {
+    border: 5px solid black;
+  }
+}
